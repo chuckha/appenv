@@ -16,6 +16,7 @@ func main() {
 		programs.Bash,
 		programs.Git,
 		programs.SSH,
+		programs.Docker,
 	}
 
 	printPath := false

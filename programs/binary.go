@@ -35,4 +35,9 @@ var (
 		Command: "ssh",
 		Args:    []string{"-V"},
 	}
+	Docker = &Binary{
+		Command: "docker",
+		Args: []string{"version", "--format", `Docker: {{.Client.Version}}
+Docker Engine: {{.Server.Version}}`},
+	}
 )
